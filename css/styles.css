@@ -7,6 +7,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* welcome header css */
 .welcome-header {
     margin: 90px 0px;
     text-align: center;
@@ -26,6 +27,7 @@ body {
     opacity: 0.7;
 }
 
+/* log in form css */
 #login-form{
     display: flex;
     flex-direction: column;
@@ -39,13 +41,12 @@ body {
     margin-bottom: 25px;
 }
 
-/* [] is attribute selector */
+/* log in form CSS except submit types */
 #login-form input:not([type="submit"]) {
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     transition: border-color 0.3s ease-in-out;
 }
 
-/* :: is pseudo element selector */
 #login-form input::placeholder {
     color: rgba(0, 0, 0, 0.4);
 }
@@ -54,13 +55,13 @@ body {
     border-color: var(--yellow);
 }
 
+/* log in button CSS */
 #login-form input[type="submit"] {
     background-color: var(--yellow);
     cursor: pointer;
     padding: 20px 0px;
 }
 
-/* anchor inherited the color */
 #login-form a {
     text-align: center;
     text-decoration: none;
